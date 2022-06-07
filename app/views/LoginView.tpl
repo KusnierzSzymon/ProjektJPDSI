@@ -40,9 +40,7 @@
                                     <div class="col-lg-4">
                                         <b><a href="{$conf->action_root}register">Utwórz konto</a></b>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <b><a href="{$conf->action_root}restore">Odzyskiwanie hasła</a></b>
-                                    </div>
+                                    
                                     <div class="col-lg-4 text-right">
                                         <button class="btn btn-action" type="submit">Zaloguj</button>
                                     </div>

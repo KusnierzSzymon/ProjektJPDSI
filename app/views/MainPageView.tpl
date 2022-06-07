@@ -5,7 +5,7 @@
             <div class="row">
                 <h1 class="lead">Wypożyczalnia</h1>
                 <p class="tagline">Wypożycz sprzęt narciarski w atrakcyjnych cenach!</p>
-                <p><a class="btn btn-default btn-lg" role="button" href="{$conf->action_root}panel">WYPOŻYCZ</a></p>
+                <p><a class="btn btn-default btn-lg" role="button" href="{$conf->action_root}search">WYPOŻYCZ</a></p>
             </div>
         </div>
     </header>

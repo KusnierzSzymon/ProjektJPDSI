@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-06-06 20:55:28
+/* Smarty version 4.1.0, created on 2022-06-07 03:54:28
   from 'C:\xampp\htdocs\wypozyczalnia\app\views\LoginView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_629e4da04f8e85_87200075',
+  'unifunc' => 'content_629eafd477e645_90637229',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e6bad9d1ecc2b5b5666515fedec12c6ea06a3daf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\LoginView.tpl',
-      1 => 1654540791,
+      1 => 1654566867,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629e4da04f8e85_87200075 (Smarty_Internal_Template $_smarty_tpl) {
+function content_629eafd477e645_90637229 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1925047266629e4da04f3e95_95487987', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_618850336629eafd4777b11_28121240', 'intro');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_1925047266629e4da04f3e95_95487987 extends Smarty_Internal_Block
+class Block_618850336629eafd4777b11_28121240 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_1925047266629e4da04f3e95_95487987',
+    0 => 'Block_618850336629eafd4777b11_28121240',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -85,10 +85,7 @@ login" method="post">
                                         <b><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
 register">Utwórz konto</a></b>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <b><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-restore">Odzyskiwanie hasła</a></b>
-                                    </div>
+                                    
                                     <div class="col-lg-4 text-right">
                                         <button class="btn btn-action" type="submit">Zaloguj</button>
                                     </div>

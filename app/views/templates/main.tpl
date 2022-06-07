@@ -46,22 +46,21 @@
 						{/if}
 						{if core\RoleUtils::inRole("logged")}
 							<li class="dropdown">
-								<a class="dropdown-toggle btn" data-toggle="dropdown">NarzÄ™dzia <b class="caret"></b></a>
+								<a class="dropdown-toggle btn" data-toggle="dropdown">Narzędzia <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="{$conf->action_root}panel">Panel gĹ‚Ăłwny</a></li>
-									<li><a href="{$conf->action_root}addPlace">Dodaj sklep</a></li>
-									<li><a href="{$conf->action_root}profile">MĂłj profil</a></li>
+									<li><a href="{$conf->action_root}panel">Panel główny</a></li>
+									<li><a href="{$conf->action_root}profile">Mój profil</a></li>
 									{if core\RoleUtils::inRole("admin") || core\RoleUtils::inRole("moderator")}
 										<li class="divider"></li>
-										<li><a href="{$conf->action_root}manageUsers">Moderuj uĹĽytkownikĂłw</a></li>
-										<li><a href="{$conf->action_root}managePlaces">Moderuj sklepy</a></li>
+										<li><a href="{$conf->action_root}addEquip">Dodaj sprzęt</a></li>
+                                                                                <li><a href="{$conf->action_root}manageUsers">Moderuj użytkowników</a></li>
+										
 										<li class="divider"></li>
 									{/if}
 									{if core\RoleUtils::inRole("admin")}
-										<li><a href="{$conf->action_root}adminLogs">Logi administracyjne</a></li>
-										<li><a href="{$conf->action_root}test">Debuger</a></li>
-										<li><a href="{$conf->action_root}generateXML">XML</a></li>
-										<li class="divider"></li>
+								
+										
+										
 									{/if}
 									<li><a href="{$conf->action_root}logout">Wyloguj</a></li>
 								</ul>
