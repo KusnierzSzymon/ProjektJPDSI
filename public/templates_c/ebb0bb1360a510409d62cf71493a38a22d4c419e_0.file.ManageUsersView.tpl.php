@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-06-07 04:52:30
+/* Smarty version 4.1.0, created on 2022-06-20 01:01:05
   from 'C:\xampp\htdocs\wypozyczalnia\app\views\ManageUsersView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_629ebd6e6af4c7_85884934',
+  'unifunc' => 'content_62afaab1af1038_43091024',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ebb0bb1360a510409d62cf71493a38a22d4c419e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\ManageUsersView.tpl',
-      1 => 1654570338,
+      1 => 1655679533,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629ebd6e6af4c7_85884934 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62afaab1af1038_43091024 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1945243245629ebd6e694be5_38088607', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7408544862afaab1adaae5_96407655', 'intro');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_1945243245629ebd6e694be5_38088607 extends Smarty_Internal_Block
+class Block_7408544862afaab1adaae5_96407655 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_1945243245629ebd6e694be5_38088607',
+    0 => 'Block_7408544862afaab1adaae5_96407655',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -215,7 +215,7 @@ manageUsers/0">Załaduj wszystkich użytkowników</a>
     <?php echo '<script'; ?>
 >
         function deleteUser(Id_user) {
-            if (confirm("Na pewno chcesz usunÄ…Ä‡ uĹĽytkownika? Nie moĹĽna bÄ™dzie cofnÄ…Ä‡ tej operacji")) {
+            if (confirm("Na pewno chcesz usunąć użytkownika? Nie można cofnąć tej operacji")) {
                 window.location.href = '<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
 manageUsers/<?php echo $_smarty_tpl->tpl_vars['offset']->value;?>
 /delete/'+Id_user;

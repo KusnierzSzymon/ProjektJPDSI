@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-06-07 05:03:56
+/* Smarty version 4.1.0, created on 2022-06-20 01:56:18
   from 'C:\xampp\htdocs\wypozyczalnia\app\views\PanelView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_629ec01c24b569_88166022',
+  'unifunc' => 'content_62afb7a2e6ba37_09482570',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a2dcc2333c8e6e5661149491a8a12e2853b53d0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\PanelView.tpl',
-      1 => 1654571032,
+      1 => 1655682977,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629ec01c24b569_88166022 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62afb7a2e6ba37_09482570 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1750302733629ec01c23c829_85209386', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_86321995362afb7a2e5abd8_19003948', 'intro');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_1750302733629ec01c23c829_85209386 extends Smarty_Internal_Block
+class Block_86321995362afb7a2e5abd8_19003948 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_1750302733629ec01c23c829_85209386',
+    0 => 'Block_86321995362afb7a2e5abd8_19003948',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -126,10 +126,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         </ul>
                     <?php }?>
                     <?php if (!(isset($_smarty_tpl->tpl_vars['query']->value)) || count($_smarty_tpl->tpl_vars['query']->value) == 0) {?>
-                        <h5>Brak miejsc do wyĹ›wietlenia!</h5>
+                        <h5>Brak miejsc do wyświetlenia!</h5>
                     <?php }?>
                 </div>
             </div>
+</div>
         </div>
     <?php echo '<script'; ?>
 >

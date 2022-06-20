@@ -54,7 +54,7 @@
 										<li class="divider"></li>
 										<li><a href="{$conf->action_root}addEquip">Dodaj sprzęt</a></li>
                                                                                 <li><a href="{$conf->action_root}manageUsers">Moderuj użytkowników</a></li>
-										
+										<li><a href="{$conf->action_root}place">Dodaj wypożyczalnie</a></li>
 										<li class="divider"></li>
 									{/if}
 									{if core\RoleUtils::inRole("admin")}

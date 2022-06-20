@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-06-07 01:12:37
+/* Smarty version 4.1.0, created on 2022-06-20 00:56:46
   from 'C:\xampp\htdocs\wypozyczalnia\app\views\AddEquipView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_629e89e5e6f002_88831831',
+  'unifunc' => 'content_62afa9ae3612b9_54008257',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cca03bb3905a11fa672e5b8eddeaeeddd481b006' => 
     array (
       0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\AddEquipView.tpl',
-      1 => 1654557148,
+      1 => 1655679404,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629e89e5e6f002_88831831 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62afa9ae3612b9_54008257 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1838767172629e89e5e68e68_96225423', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_106171859662afa9ae358716_10972261', 'intro');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_1838767172629e89e5e68e68_96225423 extends Smarty_Internal_Block
+class Block_106171859662afa9ae358716_10972261 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_1838767172629e89e5e68e68_96225423',
+    0 => 'Block_106171859662afa9ae358716_10972261',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -120,8 +120,15 @@ addEquip" method="post">
                                         <button class="btn btn-action" type="submit">Dodaj</button>
                                     </div>
                                 </div>
+</div>
+</div>
+         
+</div>
+</div>
+</div>
 
-                            
+
+                   
 <?php
 }
 }

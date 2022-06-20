@@ -68,10 +68,11 @@
                         </ul>
                     {/if}
                     {if !isset($query) || count($query) == 0}
-                        <h5>Brak miejsc do wyĹ›wietlenia!</h5>
+                        <h5>Brak miejsc do wyświetlenia!</h5>
                     {/if}
                 </div>
             </div>
+</div>
         </div>
     <script>
         function doNothing() {

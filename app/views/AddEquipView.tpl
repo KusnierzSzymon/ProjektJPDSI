@@ -69,6 +69,13 @@
                                         <button class="btn btn-action" type="submit">Dodaj</button>
                                     </div>
                                 </div>
+</div>
+</div>
+         
+</div>
+</div>
+</div>
 
-                            
+
+                   
 {/block}

@@ -20,7 +20,7 @@ class ProfileControl
 
         try{
             $user = App::getDB()->get("user", [
-                "[>]role" => ["Id_rola" => "Id_rola"],
+                "[>]rola" => ["Id_rola" => "Id_rola"],
               
             ],[
                 'user.Id_user',

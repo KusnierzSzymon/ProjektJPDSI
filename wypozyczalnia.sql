@@ -81,7 +81,7 @@ INSERT INTO `sprzet` (`Id_sprzet`, `Producent`, `Model`, `Cena_dzien`, `Rozmiar`
 CREATE TABLE `typsprzetu` (
   `Id_typsprzetu` int(11) NOT NULL,
   `Nazwa_typ` varchar(45) COLLATE utf8_polish_ci NOT NULL,
-  `Dla_dzieci` tinyint(1) NOT NULL,
+  `Dla_dzieci` boolean NOT NULL,
   `Liczba_dostepnych` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
@@ -229,6 +229,9 @@ ALTER TABLE `user`
 --
 ALTER TABLE `wypozyczenie`
   MODIFY `Id_wypozyczenia` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `wypozyczalnia`
+  MODIFY `Id_wypozyczalnia` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Ograniczenia dla zrzutów tabel

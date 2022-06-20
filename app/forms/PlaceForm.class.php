@@ -1,14 +1,15 @@
 <?php
 
+
 namespace app\forms;
 
 
-class PanelForm
-{
-    public $producent;
-    public $model;
-    public $typ;
-    public $rozmiar;
+class PlaceForm {
+public $miasto;
+    public $ulica;
+    public $kod_pocztowy;
+    
+    
 
     function checkIsNull() {
         foreach ($this as $key => $value) {
