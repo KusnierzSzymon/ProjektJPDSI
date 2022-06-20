@@ -26,8 +26,7 @@
                                         <li class="list-group-item">Typ: {$place['Nazwa_typ']} </li>
                        
                                      {if \core\RoleUtils::inRole('admin')}
-                                        <a href="{$conf->action_url}SprzetEdit/{$row['Id_sprzet']}" class="button small">Edytuj</a>
-		                      <a href="{$conf->action_url}SprzetDelete/{$row['Id_sprzet']}" class="button alt small">Usuń</a>
+                                        
 				     {elseif \core\RoleUtils::inRole('user')}
 	                          <li><a class="btn" href="{$conf->action_root}SprzetGet">Wypożycz</a></li>
 			           {/if}
