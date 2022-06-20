@@ -79,7 +79,9 @@ class LoginControl
                 'Login' => $this->form->login,
                 'Haslo' => md5($this->form->password)
             ]);
-
+            
+            SessionUtils::store("global_order_id", App::getDB()->id("wypozyczenie"));
+           
             if(empty($this->accountData)){
                 Utils::addErrorMessage("Nieprawidłowy login lub hasło");
             }
@@ -99,6 +101,7 @@ class LoginControl
             SessionUtils::store("Id_user", $this->accountData["Id_user"]);
             SessionUtils::store("Login", $this->accountData["Login"]);
             SessionUtils::store("rola", $this->accountData["Nazwa_rola"]);
+            
 
             
 

@@ -50,7 +50,10 @@
 								<ul class="dropdown-menu">
 									<li><a href="{$conf->action_root}panel">Panel główny</a></li>
 									<li><a href="{$conf->action_root}profile">Mój profil</a></li>
-									{if core\RoleUtils::inRole("admin") || core\RoleUtils::inRole("moderator")}
+									        {if core\RoleUtils::inRole("user")}
+											<li><a href="{$conf->action_root}cartList">Koszyk</a></li></li>
+										{/if}
+                                                                                {if core\RoleUtils::inRole("admin") || core\RoleUtils::inRole("moderator")}
 										<li class="divider"></li>
 										<li><a href="{$conf->action_root}addEquip">Dodaj sprzęt</a></li>
                                                                                 <li><a href="{$conf->action_root}manageUsers">Moderuj użytkowników</a></li>

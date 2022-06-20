@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-06-20 01:56:18
+/* Smarty version 4.1.0, created on 2022-06-20 21:06:18
   from 'C:\xampp\htdocs\wypozyczalnia\app\views\PanelView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_62afb7a2e6ba37_09482570',
+  'unifunc' => 'content_62b0c52ac3e367_60208466',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a2dcc2333c8e6e5661149491a8a12e2853b53d0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\PanelView.tpl',
-      1 => 1655682977,
+      1 => 1655750379,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62afb7a2e6ba37_09482570 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b0c52ac3e367_60208466 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_86321995362afb7a2e5abd8_19003948', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_189826533962b0c52ac2d753_20428772', 'intro');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_86321995362afb7a2e5abd8_19003948 extends Smarty_Internal_Block
+class Block_189826533962b0c52ac2d753_20428772 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_86321995362afb7a2e5abd8_19003948',
+    0 => 'Block_189826533962b0c52ac2d753_20428772',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -116,6 +116,9 @@ shop/<?php echo $_smarty_tpl->tpl_vars['place']->value['Id_sprzet'];?>
                                                  <?php echo $_smarty_tpl->tpl_vars['place']->value['Rozmiar'];?>
 
                                             </div>
+                                        
+                                           
+                                          
                                         </div>
                                     </li>
                                 <?php

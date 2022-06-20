@@ -5,7 +5,7 @@ namespace app\forms;
 
 
 class PlaceForm {
-public $miasto;
+    public $miasto;
     public $ulica;
     public $kod_pocztowy;
     

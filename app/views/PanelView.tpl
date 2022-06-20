@@ -60,6 +60,9 @@
                                             <div class="col-md-1">
                                                  {$place['Rozmiar']}
                                             </div>
+                                        
+                                           
+                                          
                                         </div>
                                     </li>
                                 {/foreach}

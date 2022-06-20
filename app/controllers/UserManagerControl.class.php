@@ -118,8 +118,7 @@ class UserManagerControl
 
                
                 Utils::addInfoMessage("Użytkownik (".$id.") został usunięty");
-                $admin_login = SessionUtils::load("Login", true);
-                Logs::addLog("Użytkownik (".$id.") został usunięty przez ".$admin_login);
+                
             }
             else{
                 Utils::addErrorMessage("Użytkownik nie istnieje");
