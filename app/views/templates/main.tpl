@@ -17,12 +17,15 @@
 	<link rel="stylesheet" href="{$conf->styles}/additional.css">
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
 
-	<script type="text/javascript" src="{$conf->scripts}/alertify.js"></script>
+	<script type="text/javascript" src="{$conf->scripts}/functions.js"></script>
+        <script type="text/javascript" src="{$conf->scripts}/alertify.js"></script>
 	<script type="text/javascript" src="{$conf->scripts}/ajax-functions.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+	
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script
+       
 </head>
 <body>
 	<div class="home">
@@ -59,6 +62,7 @@
                                                                                 <li><a href="{$conf->action_root}manageUsers">Moderuj użytkowników</a></li>
 										<li><a href="{$conf->action_root}place">Dodaj wypożyczalnie</a></li>
                                                                                 <li><a href="{$conf->action_root}rentList">Wypozyczenia</a></li>
+                                                                                <li><a href="{$conf->action_root}placeList">Lista wypozyczalni</a></li>
 										<li class="divider"></li>
 									{/if}
 									{if core\RoleUtils::inRole("admin")}
@@ -173,6 +177,7 @@
 	<script src="{$conf->scripts}/headroom.min.js"></script>
 	<script src="{$conf->scripts}/jQuery.headroom.min.js"></script>
 	<script src="{$conf->scripts}/template.js"></script>
+        
 
 </body>
 </html>

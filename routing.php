@@ -26,3 +26,6 @@ Utils::addRoute('cartFinalize', 'CartCtrl',	['user']);
 Utils::addRoute('SprzetGet', 'SprzetEditCtrl', ['user']);
 Utils::addRoute('rentDelete', 'RentControl', ['admin']);
 Utils::addRoute('rentAccept', 'RentControl', ['admin']);
+Utils::addRoute('placeList', 'PlaceListControl', ['admin']);
+Utils::addRoute('placeListPart', 'PlaceListControl', ['admin']);
+
