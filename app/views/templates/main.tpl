@@ -56,17 +56,17 @@
 									        {if core\RoleUtils::inRole("user")}
 											<li><a href="{$conf->action_root}cartList">Koszyk</a></li></li>
 										{/if}
-                                                                                {if core\RoleUtils::inRole("admin") || core\RoleUtils::inRole("moderator")}
+                                                                                {if core\RoleUtils::inRole("moderator")}
 										<li class="divider"></li>
 										<li><a href="{$conf->action_root}addEquip">Dodaj sprzęt</a></li>
-                                                                                <li><a href="{$conf->action_root}manageUsers">Moderuj użytkowników</a></li>
+                                                                                
 										<li><a href="{$conf->action_root}place">Dodaj wypożyczalnie</a></li>
                                                                                 <li><a href="{$conf->action_root}rentList">Wypozyczenia</a></li>
                                                                                 <li><a href="{$conf->action_root}placeList">Lista wypozyczalni</a></li>
 										<li class="divider"></li>
 									{/if}
 									{if core\RoleUtils::inRole("admin")}
-								
+								        <li><a href="{$conf->action_root}manageUsers">Moderuj użytkowników</a></li>
 										
 										
 									{/if}
