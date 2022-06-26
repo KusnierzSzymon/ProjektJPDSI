@@ -28,7 +28,7 @@
                                      {if \core\RoleUtils::inRole('admin')}
                                         
 				     {elseif \core\RoleUtils::inRole('user')}
-	                          <li><a class="btn" href="{$conf->action_root}SprzetGet">Wypożycz</a></li>
+	                          <li><a href="{$conf->action_url}SprzetGet/{$place['Id_sprzet']}" class="button alt small">Wypożycz</a></li>
 			           {/if}
 
                                       

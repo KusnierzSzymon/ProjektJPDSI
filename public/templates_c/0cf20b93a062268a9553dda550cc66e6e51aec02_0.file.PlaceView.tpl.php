@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-06-20 16:11:36
+/* Smarty version 4.1.0, created on 2022-06-26 19:14:53
   from 'C:\xampp\htdocs\wypozyczalnia\app\views\PlaceView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_62b080188338a0_85672086',
+  'unifunc' => 'content_62b8940d5db360_53271533',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0cf20b93a062268a9553dda550cc66e6e51aec02' => 
     array (
       0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\PlaceView.tpl',
-      1 => 1655734283,
+      1 => 1656263687,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62b080188338a0_85672086 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b8940d5db360_53271533 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_186829375662b0801882c641_62692436', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_102365163062b8940d5d5a41_81758304', 'intro');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_186829375662b0801882c641_62692436 extends Smarty_Internal_Block
+class Block_102365163062b8940d5d5a41_81758304 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_186829375662b0801882c641_62692436',
+    0 => 'Block_102365163062b8940d5d5a41_81758304',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -67,17 +67,17 @@ main">Strona główna</a></li>
 place" method="post">
                                 <div class="top-margin">
                                     <label>Ulica <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" name="ulica" placeholder="Pełna nazwa" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->ulica;?>
+                                    <input type="text" class="form-control" name="ulica" placeholder="Nazwa ulicy" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->ulica;?>
 ">
                                 </div>
                                 <div class="top-margin">
                                     <label>Miasto <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" name="miasto" placeholder="Model sprzętu" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->miasto;?>
+                                    <input type="text" class="form-control" name="miasto" placeholder="Nazwa miasta" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->miasto;?>
 ">
                                 </div>
                                 <div class="top-margin">
                                     <label>Kod pocztowy <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" name="kod_pocztowy" placeholder="Cena sprzętu za dzień" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->kod_pocztowy;?>
+                                    <input type="text" class="form-control" name="kod_pocztowy" placeholder="Kod pocztowy miasta(bez - )" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->kod_pocztowy;?>
 ">
                                 </div>
                                 

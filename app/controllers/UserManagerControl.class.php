@@ -59,7 +59,7 @@ class UserManagerControl
     public function getUserFromDB($id){
         try{
             $this->user = App::getDB()->get("user", [
-                "[>]rola" => ["Id_rola" => "Id_rola"]
+                "[>]rola" => ["Id_rola" => "Id_rola"],
                 
             ],[
                 'user.Id_user',

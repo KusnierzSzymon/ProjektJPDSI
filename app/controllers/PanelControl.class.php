@@ -59,6 +59,7 @@ class PanelControl
                 'sprzet.Model',
                 'sprzet.Rozmiar',
                 'typsprzetu.Dla_dzieci',
+               'typsprzetu.Nazwa_typ',
                 
            ], $this->where);
         }catch(\PDOException $e){

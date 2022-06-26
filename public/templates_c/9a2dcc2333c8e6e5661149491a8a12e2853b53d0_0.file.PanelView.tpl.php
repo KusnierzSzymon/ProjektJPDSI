@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-06-20 21:06:18
+/* Smarty version 4.1.0, created on 2022-06-26 13:30:44
   from 'C:\xampp\htdocs\wypozyczalnia\app\views\PanelView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_62b0c52ac3e367_60208466',
+  'unifunc' => 'content_62b84364c182c0_27966334',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a2dcc2333c8e6e5661149491a8a12e2853b53d0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\PanelView.tpl',
-      1 => 1655750379,
+      1 => 1656243043,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62b0c52ac3e367_60208466 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b84364c182c0_27966334 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_189826533962b0c52ac2d753_20428772', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_86994598462b84364c07243_47921170', 'intro');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_189826533962b0c52ac2d753_20428772 extends Smarty_Internal_Block
+class Block_86994598462b84364c07243_47921170 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_189826533962b0c52ac2d753_20428772',
+    0 => 'Block_86994598462b84364c07243_47921170',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -74,11 +74,12 @@ hint?column=address&value='+this.value, 'addressHints', doNothing)">
                                         </datalist>
                                     </div>
                                     
-                             
+                           
                                 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="submit" class="btn btn-primary" value="Szukaj">
+                                        <br/>
+<input type="submit" class="btn btn-primary" value="Szukaj">
                                     </div>
                                 </div>
                             </form>
@@ -92,12 +93,37 @@ hint?column=address&value='+this.value, 'addressHints', doNothing)">
                     <?php if ((isset($_smarty_tpl->tpl_vars['query']->value)) || count($_smarty_tpl->tpl_vars['query']->value) > 0) {?>
                         <ul class="list-group">
                             <?php if (count($_smarty_tpl->tpl_vars['query']->value) > 0) {?>
-                                <?php
+                   <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                             <th><b>Producent</b></th>   
+                                            </div>
+                                            <div class="col-md-3">
+                                               <th><b>Model</b></th> 
+                                            </div>
+                                            
+                                            
+                                            <div class="col-md-3">
+                                                <th><b>Typ</b></th>  
+                                            </div>
+
+<div class="col-md-3">
+                                                <th><b>Rozmiar</b></th>  
+                                            </div>
+                                        
+                                           
+                                          
+                                        </div>
+                                    </li>
+                     
+<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['query']->value, 'place');
 $_smarty_tpl->tpl_vars['place']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['place']->value) {
 $_smarty_tpl->tpl_vars['place']->do_else = false;
 ?>
+                                    
+                  
                                     <li class="list-group-item">
                                         <div class="row">
                                             <div class="col-md-3">
@@ -110,13 +136,17 @@ shop/<?php echo $_smarty_tpl->tpl_vars['place']->value['Id_sprzet'];?>
                                                 <?php echo $_smarty_tpl->tpl_vars['place']->value['Model'];?>
 
                                             </div>
-                                            
+                                            <div class="col-md-3">
+                                                <?php echo $_smarty_tpl->tpl_vars['place']->value['Nazwa_typ'];?>
+
+                                            </div>
+                                        
                                             
                                             <div class="col-md-1">
                                                  <?php echo $_smarty_tpl->tpl_vars['place']->value['Rozmiar'];?>
 
                                             </div>
-                                        
+                                            
                                            
                                           
                                         </div>

@@ -49,7 +49,7 @@ class UserEditControl
      */
     public function getCurrentUserData(){
         try{
-            $this->Id_user = App::getDB()->get("user","*",[
+            $this->user = App::getDB()->get("user","*",[
                 'Id_user' => $this->form->Id_user
             ]);
         }catch(\PDOException $e){

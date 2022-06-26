@@ -9,10 +9,21 @@
                 <p>Przejrzyj zawartość swojego koszyka przed finalizacją zamówienia.</p>
                 <table>
                   <thead>
-                    <th>Produkt</th>
-                    <th>Zamawianie</th>
-                    <th>Modyfikacja</th>
-                  </thead>
+ <li class="list-group-item">
+                                        <div class="row">
+
+<div class="col-md-3">
+                   <th>Produkt</th>
+</div>
+  <div class="col-md-3">                   
+<th>Zamówienie</th>
+</div>
+   <div class="col-md-3">                  
+<th>Modyfikacja</th>
+</div>
+     </div>
+                                    </li>
+              </thead>
                   <tbody>
                     {foreach $cart as $row}
               				<tr>
@@ -47,4 +58,5 @@
 </div>
 		
 	</div>
+</div>
 {/block}

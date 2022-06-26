@@ -22,4 +22,8 @@ class Config extends \ArrayObject{
 	public $db_charset;
 	public $db_prefix;
 	public $db_option;
+        public $styles;
+        public $scripts;
+        public $images;
+        public $avatars;
 }

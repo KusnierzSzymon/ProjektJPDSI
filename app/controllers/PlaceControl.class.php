@@ -69,7 +69,8 @@ class PlaceControl {
         ]);
 
         
-        
+    if(!App::getMessages()->isError()) return true;
+        else return false;    
     }
 
     /**

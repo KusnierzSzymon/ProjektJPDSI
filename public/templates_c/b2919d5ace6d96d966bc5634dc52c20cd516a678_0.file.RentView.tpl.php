@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-06-26 14:55:52
-  from 'C:\xampp\htdocs\wypozyczalnia\app\views\CartView.tpl' */
+/* Smarty version 4.1.0, created on 2022-06-26 20:51:45
+  from 'C:\xampp\htdocs\wypozyczalnia\app\views\RentView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_62b85758463e11_07654614',
+  'unifunc' => 'content_62b8aac1a90e09_18360500',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '48f58b1b392b8be758c7e41039cc5ad6adc9049a' => 
+    'b2919d5ace6d96d966bc5634dc52c20cd516a678' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\CartView.tpl',
-      1 => 1656248150,
+      0 => 'C:\\xampp\\htdocs\\wypozyczalnia\\app\\views\\RentView.tpl',
+      1 => 1656269504,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62b85758463e11_07654614 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b8aac1a90e09_18360500 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_48588140762b857584590b3_23254365', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_97467938762b8aac1a83a90_97906374', 'intro');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_48588140762b857584590b3_23254365 extends Smarty_Internal_Block
+class Block_97467938762b8aac1a83a90_97906374 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_48588140762b857584590b3_23254365',
+    0 => 'Block_97467938762b8aac1a83a90_97906374',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -50,7 +50,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 main">Strona główna</a></li>
                 
             
-                <p>Przejrzyj zawartość swojego koszyka przed finalizacją zamówienia.</p>
+                <p>Przejrzyj wypożyczenia.</p>
                 <table>
                   <thead>
  <li class="list-group-item">
@@ -62,6 +62,12 @@ main">Strona główna</a></li>
   <div class="col-md-3">                   
 <th>Zamówienie</th>
 </div>
+ <div class="col-md-3">                   
+<th>ID Sprzętu</th>
+</div>
+ <div class="col-md-3">                   
+<th>ID użytkownika</th>
+</div>
    <div class="col-md-3">                  
 <th>Modyfikacja</th>
 </div>
@@ -70,28 +76,39 @@ main">Strona główna</a></li>
               </thead>
                   <tbody>
                     <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['cart']->value, 'row');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rent']->value, 'row');
 $_smarty_tpl->tpl_vars['row']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
 $_smarty_tpl->tpl_vars['row']->do_else = false;
 ?>
               				<tr>
-              					<td><?php echo $_smarty_tpl->tpl_vars['row']->value["Id_sprzet"];?>
+              					<td><?php echo $_smarty_tpl->tpl_vars['row']->value["Producent"];?>
 </td>
-		       <td><?php echo $_smarty_tpl->tpl_vars['row']->value["Id_wypozyczenia"];?>
+		       <td><?php echo $_smarty_tpl->tpl_vars['row']->value["Model"];?>
 </td>
-                        <td>
+                       <td><?php echo $_smarty_tpl->tpl_vars['row']->value["Id_sprzet"];?>
+</td>
+                       <td><?php echo $_smarty_tpl->tpl_vars['row']->value["Id_user"];?>
+</td>
+              		<td>
 			<a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
-cartDelete/<?php echo $_smarty_tpl->tpl_vars['row']->value['Id_sprzet'];?>
-" class="button alt small">Usuń</a>
+rentAccept/<?php echo $_smarty_tpl->tpl_vars['row']->value['Id_sprzet'];?>
+/<?php echo $_smarty_tpl->tpl_vars['row']->value['Id_wypozyczenia'];?>
+" class="button alt small">Akceptuj</a>
                         </td>
-              				</tr>
+<td>
+			<a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
+rentDelete/<?php echo $_smarty_tpl->tpl_vars['row']->value['Id_sprzet'];?>
+/<?php echo $_smarty_tpl->tpl_vars['row']->value['Id_wypozyczenia'];?>
+" class="button alt small">Usuń</a>
+                        </td>		
+</tr>
 			<?php
 }
 if ($_smarty_tpl->tpl_vars['row']->do_else) {
 ?>
 						<h2>Pusto</h2>
-                      <p>Przejdz do listy sprzętu!</p>
+                      
               			<?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
@@ -104,13 +121,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
 		
 							
-                    <h2>Zakup</h2>
-                  <p>Suma zakupów:&nbsp;<strong>120,00 zł‚</strong></p>
-                  <p>Odbierz zarezerwowany sprzęt w naszej wypożyczalni!</p>
-  								
-                    <a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-cartFinalize" class="button icon fa-file-alt">Zakup</a>
-  								
+                   
 	
 				</div>
 			</div>

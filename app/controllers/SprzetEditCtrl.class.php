@@ -18,7 +18,7 @@ class SprzetEditCtrl {
     try {
       App::getDB()->insert("wypozsprzet",[
         "Id_wypozyczenia" => SessionUtils::load("global_order_id", true),
-       
+      
         "Id_sprzet" => ParamUtils::getFromCleanURL(1)
       ]);
     } catch (\PDOException $e) {

@@ -22,6 +22,7 @@ class ShopDetailsControl
                 "[>]typsprzetu" => ["Id_typsprzetu" => "Id_typsprzetu"],
                 
             ],[
+                'sprzet.Id_sprzet',
                 'sprzet.Producent',
                 'sprzet.Model',
                 'sprzet.Cena_dzien',

@@ -1,23 +1,4 @@
-{extends file="main.tpl"}
-{block name=intro}
-    <header id="head" class="secondary"></header>
-    <!-- container -->
-    <div class="container">
-
-        <ol class="breadcrumb">
-            <li><a href="{$conf->action_root}main">Strona główna</a></li>
-            <li class="active">{$page_title}</li>
-        </ol>
-
-        <div class="row">
-
-            <!-- Article main content -->
-            <article class="col-xs-12 maincontent">
-                <header class="page-header">
-                    <h1 class="page-title">Dodaj nową wypożyczalnie</h1>
-                </header>
-
-                <div class="col-md-6 col-sm-8 row">
+<div class="col-md-6 col-sm-8 row">
                     <div class="panel panel-default">
                         <div class="panel-body" id="addingForm">
                          <form action="{$conf->action_root}place" method="post">
@@ -60,9 +41,3 @@
 </div>
          
 </div>
-</div>
-</div>
-
-
-                   
-{/block}

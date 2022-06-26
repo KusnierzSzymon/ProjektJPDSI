@@ -28,11 +28,12 @@
                                         </datalist>
                                     </div>
                                     
-                             
+                           
                                 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="submit" class="btn btn-primary" value="Szukaj">
+                                        <br/>
+<input type="submit" class="btn btn-primary" value="Szukaj">
                                     </div>
                                 </div>
                             </form>
@@ -46,7 +47,32 @@
                     {if isset($query) || count($query) > 0}
                         <ul class="list-group">
                             {if count($query) > 0}
-                                {foreach $query as $place}
+                   <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                             <th><b>Producent</b></th>   
+                                            </div>
+                                            <div class="col-md-3">
+                                               <th><b>Model</b></th> 
+                                            </div>
+                                            
+                                            
+                                            <div class="col-md-3">
+                                                <th><b>Typ</b></th>  
+                                            </div>
+
+<div class="col-md-3">
+                                                <th><b>Rozmiar</b></th>  
+                                            </div>
+                                        
+                                           
+                                          
+                                        </div>
+                                    </li>
+                     
+{foreach $query as $place}
+                                    
+                  
                                     <li class="list-group-item">
                                         <div class="row">
                                             <div class="col-md-3">
@@ -55,12 +81,15 @@
                                             <div class="col-md-3">
                                                 {$place['Model']}
                                             </div>
-                                            
+                                            <div class="col-md-3">
+                                                {$place['Nazwa_typ']}
+                                            </div>
+                                        
                                             
                                             <div class="col-md-1">
                                                  {$place['Rozmiar']}
                                             </div>
-                                        
+                                            
                                            
                                           
                                         </div>
